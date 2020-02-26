@@ -1,5 +1,5 @@
 # Coding-Practice
-Google Interview Question
+**Google Interview Question
 
 
 Find a way to schedule meetings when both person 1 and person 2 are available. Output should consist of a list of lists containing the times both person 1 and 2 are free.
@@ -22,8 +22,8 @@ person 2 [[10:00, 11:30], [12:30, 14:30], [14:30, 15:00], [16:00, 17:00]]       
 sample output: [[8:00, 9:00], [11:30, 12:00], [15:00, 16:00], [18:00, 23:00]]
 
 
-
-Microsoft Interview Question
+******************************************************************************************************************
+**Microsoft Interview Question
 
 You are processing plane seat reservations. The plane has N rows of seats, numbered from 1 to N. Therea re ten seats in each row (labelled from A to K, with letter I ommited).
 
