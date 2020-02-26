@@ -33,10 +33,4 @@ Your task is to allocate seats for as many four-person families as possible. A f
 
 Given the number of rows N and a list of reserved seats as string S, return the maximum number of four-person families that can be seated in the remaining unreserved seats.
 
-for instance, given N = 2 and s = "1A 2F 1C", your function should return 2. The following shows one possible way of seating two families in the remaining seats:
-
-     A B C     D E F G   H J K
-1    X   X     ✅✅✅✅
-2      ✅✅    ✅✅X
-
-**THE X SHOWS RESERVED SEATS AND THE CHECK MARK SHOWS THE PATTERN HOW A FOUR-PERSON FAMILY CAN BE SEATED
+for instance, given N = 2 and s = "1A 2F 1C", your function should return 2.
