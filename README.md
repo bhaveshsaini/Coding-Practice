@@ -23,7 +23,7 @@ sample output: [[8:00, 9:00], [11:30, 12:00], [15:00, 16:00], [18:00, 23:00]]
 
 
 ******************************************************************************************************************
-**Microsoft Interview Question
+**Microsoft Interview Questions
 
 1) You are processing plane seat reservations. The plane has N rows of seats, numbered from 1 to N. Therea re ten seats in each row (labelled from A to K, with letter I ommited).
 
@@ -34,7 +34,7 @@ Your task is to allocate seats for as many four-person families as possible. A f
 Given the number of rows N and a list of reserved seats as string S, return the maximum number of four-person families that can be seated in the remaining unreserved seats.
 
 for instance, given N = 2 and s = "1A 2F 1C", your function should return 2.
-
+******************************************************************************************************************
 
 2) Given an array A consisting of N integers, returns the mximum sum of two numbers who digits add up to an equal sum. If there are no two numbers who digits have an equal sum, the function should return -1.
 
