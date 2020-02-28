@@ -44,3 +44,16 @@ Examples:
 2. Given A = [42, 33, 60], the function should return 102. The digits of all numbers in A add up to the same sum, and choosing to add 42 and 60 gives. the result 102.
 
 3. Given A = [51, 32, 43], the function should return -1, since all numbers in A have digits that add up to different, unique sums.
+
+******************************************************************************************************************
+3) an infrastructure consisting of N cities, numbered from 1 to N, and M bidirectional roads between them is given. Roads do not intersect apart from at their start and end points (they can pass through underground tunnels to avoid collisions).
+
+For each pair of cities directly connected by a road, let's define their network rank as the total number of roads that are connected to either of the two cities.
+
+Write a function
+     public int solution(int[] A, int[] B, int N);
+     
+that, given two arrays A, B consisting of M integers each and an integer N, where A[i] and B[i] are cities at the two ends of the i-th road, returns the maximal network rank in the whole infrastructure.
+
+Example:
+1) Given A = [1,2,3,3] B = [2,3,1,4] and N = 4, the function should return 4. The chosen cities may be 2 and 3 and the four roads connected to them are: (2,1), (2,3), (3,1), (3,4).
