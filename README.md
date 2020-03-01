@@ -57,3 +57,16 @@ that, given two arrays A, B consisting of M integers each and an integer N, wher
 
 Example:
 1) Given A = [1,2,3,3] B = [2,3,1,4] and N = 4, the function should return 4. The chosen cities may be 2 and 3 and the four roads connected to them are: (2,1), (2,3), (3,1), (3,4).
+******************************************************************************************************************
+4) Given a string s containing only a and b, find longest substring of s such that s does not contain more than two contiguous occurrences of a and b.
+
+Example 1:
+
+Input: "aabbaaaaabb"
+Output: "aabbaa"
+
+Example 2:
+
+Input: "aabbaabbaabbaa"
+Output: "aabbaabbaabbaa"
+
