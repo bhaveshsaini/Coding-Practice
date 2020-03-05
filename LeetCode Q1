@@ -1,0 +1,70 @@
+import java.util.*;
+import java.math.BigInteger;
+
+public class Main{
+    
+    
+        public static int myAtoi(String str) {
+        String ret = "";
+        int n = 0;
+        String ints = "1234567890";
+        // str = str.trim();
+            
+        
+        
+        while(n < str.length())
+        {
+            if(str.charAt(n) != ' ' && str.charAt(n) != '-' && str.charAt(n) != '+' && ints.indexOf(str.charAt(n)) == -1)
+            {
+                if(ret == "" || ret == "-" || ret == "+")
+                {
+                    
+                    return 0;
+                }
+                else{
+                    
+                    return Integer.parseInt(ret);   
+                }
+            }
+            
+            if(str.charAt(n) == ' ' || str.charAt(n) == '+')
+            {
+                n++;
+                continue;
+            }
+            if (ret.length() == 0 && str.charAt(n) == '-'){
+                n++;
+                ret+= '-';
+                continue;
+            } else if (ret.length() != 0 && str.charAt(n) == '-'){
+                n++;
+                continue;
+            }
+           
+           
+            ret += str.charAt(n);
+            n++;
+        }
+        
+        if (ret == "" || ret.equals("-")) return 0;
+        BigInteger temp = new BigInteger(ret);
+        BigInteger min = BigInteger.valueOf(Integer.MIN_VALUE);
+        BigInteger max = BigInteger.valueOf(Integer.MAX_VALUE);
+            
+        if(temp.compareTo(min) < 0)
+        {
+            return Integer.MIN_VALUE;
+        }
+        else if(temp.compareTo(max) > 0)
+        {
+            return Integer.MAX_VALUE;
+        }
+
+        return Integer.parseInt(ret);
+    }
+
+    
+     public static void main(String []args){
+        System.out.println(myAtoi("-"));
+     }
+}
