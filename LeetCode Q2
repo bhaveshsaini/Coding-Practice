@@ -1,1 +1,49 @@
 
+class Solution {
+    public boolean isPalindrome(int x) {
+        
+        // EFFICIENT SOLUTION
+        
+        if(x < 0) // base case - if x is a negative number, return false
+            return false;
+        
+        int temp = x;
+        int ret = 0;
+        int remainder;
+        
+        while(temp > 0)
+        {
+            remainder = temp % 10; // reversed integer is stored in variable
+            ret = ret * 10 + remainder; // multiply reversed by 10 then add the remainder so it gets stored at next decimal place.
+            temp /= 10; // the last digit is removed from num after division by 10.
+        }
+            // palindrome if x and ret are equal
+        return x == ret;
+        
+        
+        
+        
+        // BAD SPACE AND TIME COMPLEXITY SOLUTION
+        
+//         List<Integer> list = new LinkedList<>();
+        
+//         while(x > 0)
+//         {
+//             int temp = x % 10;
+//             list.add(temp);
+//             x -= temp;
+//             x /= 10;
+//         }
+        
+//         int p1 = 0;
+//         int p2 = list.size() - 1;
+        
+//         while(p1 < p2)
+//         {
+//             if(list.get(p1) != list.get(p2)) return false;
+//             p1++;
+//             p2--;
+//         }
+    
+    }
+}
