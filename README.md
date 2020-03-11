@@ -2,7 +2,7 @@
 **Google Interview Question
 
 
-Find a way to schedule meetings when both person 1 and person 2 are available. Output should consist of a list of lists containing the times both person 1 and 2 are free.
+**Find a way to schedule meetings when both person 1 and person 2 are available. Output should consist of a list of lists containing the times both person 1 and 2 are free.
 
 Sample input 1:
      
@@ -25,7 +25,7 @@ sample output: [[8:00, 9:00], [11:30, 12:00], [15:00, 16:00], [18:00, 23:00]]
 ******************************************************************************************************************
 **Microsoft Interview Questions
 
-1) You are processing plane seat reservations. The plane has N rows of seats, numbered from 1 to N. Therea re ten seats in each row (labelled from A to K, with letter I ommited).
+**1) You are processing plane seat reservations. The plane has N rows of seats, numbered from 1 to N. Therea re ten seats in each row (labelled from A to K, with letter I ommited).
 
 Some seats are already reserved. The list of reserved seats is give nas a string S(of length M) containing seat numbers separated by single spaces: for example, "1A 3C 2B 40G 5A". The reserved seats can be listed in S in any order.
 
@@ -36,7 +36,7 @@ Given the number of rows N and a list of reserved seats as string S, return the 
 for instance, given N = 2 and s = "1A 2F 1C", your function should return 2.
 ******************************************************************************************************************
 
-2) Given an array A consisting of N integers, returns the mximum sum of two numbers who digits add up to an equal sum. If there are no two numbers who digits have an equal sum, the function should return -1.
+**2) Given an array A consisting of N integers, returns the mximum sum of two numbers who digits add up to an equal sum. If there are no two numbers who digits have an equal sum, the function should return -1.
 
 Examples:
 1. Given A = [51, 71, 17, 42], the function should return 93. There are two pairs of numbers whose digits add up to an equal sum: (51 ,42) and (17, 71). the first pair sums up to 93.
@@ -46,7 +46,7 @@ Examples:
 3. Given A = [51, 32, 43], the function should return -1, since all numbers in A have digits that add up to different, unique sums.
 
 ******************************************************************************************************************
-3) an infrastructure consisting of N cities, numbered from 1 to N, and M bidirectional roads between them is given. Roads do not intersect apart from at their start and end points (they can pass through underground tunnels to avoid collisions).
+**3) an infrastructure consisting of N cities, numbered from 1 to N, and M bidirectional roads between them is given. Roads do not intersect apart from at their start and end points (they can pass through underground tunnels to avoid collisions).
 
 For each pair of cities directly connected by a road, let's define their network rank as the total number of roads that are connected to either of the two cities.
 
@@ -58,7 +58,7 @@ that, given two arrays A, B consisting of M integers each and an integer N, wher
 Example:
 1) Given A = [1,2,3,3] B = [2,3,1,4] and N = 4, the function should return 4. The chosen cities may be 2 and 3 and the four roads connected to them are: (2,1), (2,3), (3,1), (3,4).
 ******************************************************************************************************************
-4) Given a string s containing only a and b, find longest substring of s such that s does not contain more than two contiguous occurrences of a and b.
+**4) Given a string s containing only a and b, find longest substring of s such that s does not contain more than two contiguous occurrences of a and b.
 
 Example 1:
 
@@ -73,9 +73,7 @@ Output: "aabbaabbaabbaa"
 ******************************************************************************************************************
 **Leetcode
 
-**Q1
-
-The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
+**Q1) The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
 
 The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.
 
@@ -121,8 +119,7 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
              Thefore INT_MIN (−231) is returned.
              
 
-***Q2
-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+***Q2) Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
 Example 1:
 
