@@ -1,0 +1,49 @@
+public class Main
+{
+    
+public static int convertToInt(String s)
+    {
+        int number1 = 0;
+         for(int i = 0; i < s.length(); i++)
+        {
+            char tempStr = s.charAt(i);
+            int tempChar = Character.getNumericValue(tempStr);
+            number1 = number1 * 10 + tempChar;
+        }
+        return number1;
+    }
+    
+    public static String multiply(String num1, String num2) 
+    {
+         if(num1 == "0" || num2 == "0") 
+        {
+            return "0";
+        }   
+        int number1 = convertToInt(num1);
+        int number2 = convertToInt(num2);
+        int result = number1 * number2;
+        String ret = "0";
+        Stack<String> st = new Stack<>();
+        
+       
+        ret = "";
+        
+        while(result > 0)
+        {
+            int digit = result % 10;
+            String toString = Integer.toString(digit);
+            st.push(toString);
+            result /= 10;
+        }
+        
+        while(!st.isEmpty())
+        {
+            ret += st.pop();
+        }
+        
+        return ret;
+    }
+	public static void main(String[] args) {
+		System.out.println(multiply("0", "0"));
+	}
+}
